@@ -1,0 +1,19 @@
+#sketch-board {
+    max-width: 960px;
+    max-height: 960px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.square {
+    background: blue;
+    display: inline-block;
+    width: calc(100% / 32);
+    /* height: 60px; */
+    height: calc(100% / 32);
+
+
+    
+
+}
