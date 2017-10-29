@@ -8,7 +8,7 @@
 }
 
 .square {
-    background: blue;
+    background: #FFFFFF;
      display: inline-block; 
     
     width: calc(100% / 16);
@@ -28,4 +28,9 @@
 h1 {
     margin: 0 auto;
     text-align: center;
+}
+
+button {
+    display: block;
+    margin: 15px auto;
 }
