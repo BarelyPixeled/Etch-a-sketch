@@ -19,8 +19,13 @@
                         $('#sketch-board').append("<div class='square'></div>");
                     }
                 }
-               
-                
+            //Hover Change Color  
+             $(".square").on("mouseover", function () {
+                    $(this).css("background", "black");
+                });
+            //End Color Change    
+
+
             }); // end ready
         </script>
     </head>
@@ -31,5 +36,11 @@
         <div id="sketch-board">
             
         </div>
+
+        <!-- <script>
+            $(".square").on("mouseover", function () {
+                    $(this).css("background", "black");
+                });
+        </script> -->
     </body>
     </html>
