@@ -17,6 +17,10 @@
 
 }
 
+.hovered {
+    background: black;
+}
+
 /* .square:hover {
     background: black;
 } */

@@ -21,9 +21,17 @@
                 }
             //Hover Change Color  
              $(".square").on("mouseover", function () {
-                    $(this).css("background", "black");
+                    $(this).addClass("hovered");
                 });
-            //End Color Change    
+            //End Color Change 
+
+            //Begin Reset Button
+            $("button").click(function() {
+                $(".square").removeClass("hovered");
+                
+            });    
+
+            //End Reset Button   
 
 
             }); // end ready
@@ -32,7 +40,7 @@
 
     <body>
         <h1>Doodle Board</h1>
-
+        <button type="button" >Reset Colors</button>
         <div id="sketch-board">
             
         </div>
