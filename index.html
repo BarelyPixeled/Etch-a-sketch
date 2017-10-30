@@ -10,7 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 //Load in divs
                 var tileNum = 16;
 
@@ -25,32 +25,33 @@
                 });
             //End Color Change 
 
-            //Begin Reset Button
+
+            //--Reset and Remake Grid  -------------------------  
             $("button").click(function() {
+                console.log("You clicked a button");
                 $(".square").removeClass("hovered");
-
                 $("#sketch-board").children().remove();
-                
-            });    
 
-            //End Reset Button   
-
-
+            //     var count = prompt("Enter A Number");
+            //     console.log(count);
+            //     //Make Grid
+            //     for(var i = 0; i < count; i++) {
+            //         for(var j = 0; j < count; j++) {
+            //             $('#sketch-board').append("<div class='square'></div>");
+            //         }
+            //     }
+             });   
             }); // end ready
+
+            
         </script>
     </head>
 
     <body>
         <h1>Doodle Board</h1>
-        <button type="button" >Reset Colors</button>
+        <button type="button">Reset Colors</button>
         <div id="sketch-board">
             
         </div>
-
-        <!-- <script>
-            $(".square").on("mouseover", function () {
-                    $(this).css("background", "black");
-                });
-        </script> -->
     </body>
     </html>
