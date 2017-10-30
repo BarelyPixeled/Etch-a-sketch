@@ -17,8 +17,13 @@
                 for(var i = 0; i < tileNum; i++) {
                     for(var j = 0; j < tileNum; j++) {
                         $('#sketch-board').append("<div class='square'></div>");
+                        //Change Size
+                        
                     }
                 }
+
+                $(".square").css("width", "calc(450px/" + tileNum + ")");
+                $(".square").css ("height", "calc(450px/" + tileNum + ")");
             //Hover Change Color  
              $(".square").on("mouseover", function () {
                     $(this).addClass("hovered");
@@ -29,18 +34,26 @@
             //--Reset and Remake Grid  -------------------------  
             $("button").click(function() {
                 console.log("You clicked a button");
-                $(".square").removeClass("hovered");
-                $("#sketch-board").children().remove();
 
-            //     var count = prompt("Enter A Number");
-            //     console.log(count);
-            //     //Make Grid
-            //     for(var i = 0; i < count; i++) {
-            //         for(var j = 0; j < count; j++) {
-            //             $('#sketch-board').append("<div class='square'></div>");
-            //         }
-            //     }
-             });   
+                $(".square").removeClass("hovered");
+                // $("#sketch-board").children().remove();
+                $("#sketch-board div").remove();
+
+                var count = prompt("Enter A Number");
+                console.log(count);
+                //Make Grid
+                for(var i = 0; i < count; i++) {
+                    for(var j = 0; j < count; j++) {
+                        $('#sketch-board').append("<div class='square'></div>");
+                    }
+                }
+
+                $(".square").css("width", "calc(450px/" + count + ")");
+                $(".square").css ("height", "calc(450px/" + count + ")");
+             }); 
+
+             
+               
             }); // end ready
 
             
@@ -53,5 +66,6 @@
         <div id="sketch-board">
             
         </div>
+
     </body>
     </html>

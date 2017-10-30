@@ -11,9 +11,9 @@
     background: #FFFFFF;
      display: inline-block; 
     
-    width: calc(100% / 16);
+    /* width: calc(100% / 16);
     
-    height: calc(450px / 16); 
+    height: calc(450px / 16);  */
 
 }
 
